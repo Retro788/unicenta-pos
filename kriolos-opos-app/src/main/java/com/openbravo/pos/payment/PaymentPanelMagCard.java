@@ -1,18 +1,4 @@
-//    KriolOS POS
-//    Copyright (c) 2019-2023 KriolOS
-//
-//    This program is free software: you can redistribute it and/or modify
-//    it under the terms of the GNU General Public License as published by
-//    the Free Software Foundation, either version 3 of the License, or
-//    (at your option) any later version.
-//
-//    This program is distributed in the hope that it will be useful,
-//    but WITHOUT ANY WARRANTY; without even the implied warranty of
-//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//    GNU General Public License for more details.
-//
-//    You should have received a copy of the GNU General Public License
-//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+// ..
 
 package com.openbravo.pos.payment;
 
@@ -103,14 +89,14 @@ public class PaymentPanelMagCard extends javax.swing.JPanel implements PaymentPa
                 try {
                     msr.close();
                 } catch (JposException localJposException1) {
-                    JOptionPane.showMessageDialog(this, "Error Occured " + localJposException1.getMessage());
+                    JOptionPane.showMessageDialog(this, AppLocal.getIntString("message.erroroccured") + localJposException1.getMessage());
                 }
             }
             try {
                 msr.open(this.logicalDeviceName);
                 this.openDevice = true;
             } catch (JposException localJposException2) {
-                JOptionPane.showMessageDialog(this, "Error Occured " + localJposException2.getMessage());
+                JOptionPane.showMessageDialog(this, AppLocal.getIntString("message.erroroccured") + localJposException2.getMessage());
             }
             //Clear the field data.
             clear();
@@ -118,19 +104,19 @@ public class PaymentPanelMagCard extends javax.swing.JPanel implements PaymentPa
             try {
                 this.msr.claim(1000);
             } catch (JposException localJposException3) {
-                JOptionPane.showMessageDialog(this, "Error Occured " + localJposException3.getMessage());
+                JOptionPane.showMessageDialog(this, AppLocal.getIntString("message.erroroccured") + localJposException3.getMessage());
             }
             try {
                 this.msr.setDataEventEnabled(true);
             } catch (JposException localJposException5) {
-                JOptionPane.showMessageDialog(this, "Error Occured " + localJposException5.getMessage());
+                JOptionPane.showMessageDialog(this, AppLocal.getIntString("message.erroroccured") + localJposException5.getMessage());
             }
             try {
                 this.msr.setDeviceEnabled(true);
                 this.enabled = true;
             } catch (JposException localJposException4) {
                 this.enabled = false;
-                JOptionPane.showMessageDialog(this, "Error Occured " + localJposException4.getMessage());
+                JOptionPane.showMessageDialog(this, AppLocal.getIntString("message.erroroccured") + localJposException4.getMessage());
             }
         }
     }

@@ -23,7 +23,7 @@ package com.openbravo.pos.forms;
 public class JCopyRightPanel extends javax.swing.JPanel {
 
     private static final long serialVersionUID = 1L;
-    private static final String OFICIAL_S = "https://github.com/poolborges/unicenta-pos";
+    private static final String OFICIAL_S = "Gracias por su apoyo";
     /**
      * Creates new form JCopyRightPanel
      */
@@ -31,19 +31,8 @@ public class JCopyRightPanel extends javax.swing.JPanel {
         initComponents();
         
         copyRightLabel.setText("<html><center>"
-                + "<h1>KriolOS POS - Open Source Point Of Sale</h1>"
-                + "<p>More info on <href a=\""+OFICIAL_S+"\">official site</a></p>"
-                + "<p>"+OFICIAL_S+"</p>"
-                + "</center>"
-                + "<br><br>"
-                + "<h2>License: GPL v3</h2>"
-                + "<br>"
-                + "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br>"
-                + "<br>"
-                + " This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.<br>"
-                + "<br>"
-                + "You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/<br>"
-                + "</html>"
+                + "<h1>KriolOS POS</h1>"
+
         );
 
         copyRightLabel.setAlignmentX(0.5F);

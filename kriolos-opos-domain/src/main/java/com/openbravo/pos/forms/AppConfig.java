@@ -1,18 +1,4 @@
-//    KriolOS POS
-//    Copyright (c) 2019-2023 KriolOS
-//
-//    This program is free software: you can redistribute it and/or modify
-//    it under the terms of the GNU General Public License as published by
-//    the Free Software Foundation, either version 3 of the License, or
-//    (at your option) any later version.
-//
-//    This program is distributed in the hope that it will be useful,
-//    but WITHOUT ANY WARRANTY; without even the implied warranty of
-//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//    GNU General Public License for more details.
-//
-//    You should have received a copy of the GNU General Public License
-//    along with this program.  If not, see <http://www.gnu.org/licenses/>
+// .
 package com.openbravo.pos.forms;
 
 import com.openbravo.format.Formats;
@@ -355,14 +341,7 @@ public class AppConfig implements AppProperties {
         propConfig.setProperty("paper.standard.mediasizename", "A4");
 
         propConfig.setProperty("tkt.header1", "KriolOS POS");
-        propConfig.setProperty("tkt.header2", "Open Source Point Of Sale");
-        propConfig.setProperty("tkt.header3", "Copyright (c) 2020-2023 KriolOS");
-        propConfig.setProperty("tkt.header4", "Change header text in Configuration");
-
-        propConfig.setProperty("tkt.footer1", "Change footer text in Configuration");
-        propConfig.setProperty("tkt.footer2", "Thank you for your custom");
-        propConfig.setProperty("tkt.footer3", "Please Call Again");
-
+        
         propConfig.setProperty("table.showcustomerdetails", "true");
         propConfig.setProperty("table.customercolour", "#58B000");
         propConfig.setProperty("table.showwaiterdetails", "true");
